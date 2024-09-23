@@ -1,0 +1,90 @@
+.card {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0 gray;
+  background-color: rgb(221, 221, 221);
+}
+
+.card__inside {
+  padding: 5px;
+  background-color: rgba(255, 252, 81, 0.676);
+}
+
+.card__header {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  .card__header--left,
+  .card__header--right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .card__header--right {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+.card__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.card__art {
+  margin: 0;
+  padding: 5px 5px 0 5px;
+  width: calc(100% - 10px);
+  background-color: lightgrey;
+
+  img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 5px;
+  }
+}
+
+.card__capacities {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.card__capacity {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  .card__capacity--main {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+  }
+
+  .card__capacity--name {
+    flex-grow: 1;
+  }
+
+  .card__capacity--cost {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .card__capacity--description {
+    font-size: small;
+  }
+}
+
+
